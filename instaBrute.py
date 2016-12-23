@@ -16,7 +16,7 @@ def userExists(username):
 		driver.get("https://instagram.com/"+username)
 		assert (("Page Not Found" or "no encontrada") not in driver.title)
 	except AssertionError:
-		print 'user: "%s" does not exist, trying with the next!' %username
+		print 'user: "%s" does  not exist, trying with the next!' %username
 		return 1
 	except:
 		'uknown error'
